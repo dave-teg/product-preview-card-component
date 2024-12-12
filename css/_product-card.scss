@@ -140,7 +140,8 @@
       font-size: $font-size-sm;
       transition: all 0.3s ease-in-out;
       cursor: pointer;
-      &:hover {
+      &:hover,
+      &:focus {
         background-color: darken($dark-cyan, 10%);
       }
     }

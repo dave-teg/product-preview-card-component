@@ -180,7 +180,7 @@ input, label, button {
     transition: all 0.3s ease-in-out;
     cursor: pointer;
   }
-  .card .cta:hover {
+  .card .cta:hover, .card .cta:focus {
     background-color: #2c5e4b;
   }
 }
