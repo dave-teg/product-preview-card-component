@@ -1,0 +1,155 @@
+.card {
+  margin: 30px 15px;
+  background-color: $white;
+  border-radius: 10px;
+
+  @include breakpoint-up(medium){
+    width: 440px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include breakpoint-up(large) {
+    width: 600px;
+  }
+
+  .card-content {
+    padding: 24px;
+
+    @include breakpoint-up(large) {
+      padding: 30px;
+    }
+  }
+
+  img {
+    border-radius: 10px 10px 0 0;
+
+    @include breakpoint-up(medium){ 
+      //width: 240px;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px 0 0 10px;
+    }
+  }
+
+  .sub-title {
+    text-transform: uppercase;
+    color: $dark-grayish-blue;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-md;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+
+    @include breakpoint-up(medium) {
+      font-size: $font-size-xsm;
+    }
+
+    @include breakpoint-up(large) {
+      font-size: $font-size-sm;
+      margin-bottom: 24px;
+    }
+
+
+  }
+
+  .main-title {
+    font-size: $font-size-xlg;
+    margin-bottom :22px;
+    line-height: 1.1;
+    color: $very-dark-blue;
+
+    @include breakpoint-up(medium) {
+      font-size: $font-size-lg;
+    }
+
+    @include breakpoint-up(large) {
+      font-size: $font-size-xlg;
+      margin-bottom: 1em;
+    }
+  }
+
+  .description {
+    color: $dark-grayish-blue;
+    font-size: $font-size-md;
+    line-height: 1.75;
+    margin-bottom: 30px;
+
+    @include breakpoint-up(medium){
+      font-size: $font-size-sm;
+    }
+
+    @include breakpoint-up(large){
+      font-size: $font-size-md
+    }
+  }
+
+  .price-tag {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    @include breakpoint-up(large) {
+      margin-bottom: 28px;
+    }
+
+    .current-price {
+      font-family: $headingFont;
+      font-size: $font-size-xlg;
+      color: $dark-cyan;
+      font-weight: $font-weight-lg;
+
+      @include breakpoint-up(medium) {
+        font-size: $font-size-lg;
+      }
+
+      @include breakpoint-up(large) {
+        font-size: $font-size-xlg;
+      }
+    }
+
+    .previous-price {
+      font-size: $font-size-md;
+      text-decoration: line-through;
+
+      @include breakpoint-up(medium) {
+        font-size: $font-size-sm;
+      }
+      @include breakpoint-up(medium) {
+        font-size: $font-size-md;
+      }
+    }
+  }
+
+  .cta {
+    width: 100%;
+    padding: 1rem 0;
+    border: none;
+    outline: none;
+    background-color: $dark-cyan;
+    color: $white;
+    font-size: $font-size-md;
+    font-weight: $font-weight-lg;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    @include breakpoint-up(medium) {
+      font-size: $font-size-sm;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        background-color: darken($dark-cyan, 10%);
+      }
+    }
+
+    @include breakpoint-up(large) {
+      font-size: $font-size-md;
+    }
+  }
+}
+
+
+
