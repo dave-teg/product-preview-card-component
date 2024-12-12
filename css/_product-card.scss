@@ -112,6 +112,7 @@
     .previous-price {
       font-size: $font-size-md;
       text-decoration: line-through;
+      color: $dark-grayish-blue;
 
       @include breakpoint-up(medium) {
         font-size: $font-size-sm;

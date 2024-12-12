@@ -87,7 +87,7 @@ input, label, button {
   }
 }
 .card .main-title {
-  font-size: 1.75rem;
+  font-size: 1.875rem;
   margin-bottom: 22px;
   line-height: 1.1;
   color: hsl(212, 21%, 14%);
@@ -99,7 +99,7 @@ input, label, button {
 }
 @media (min-width: 64em) {
   .card .main-title {
-    font-size: 1.75rem;
+    font-size: 1.875rem;
     margin-bottom: 1em;
   }
 }
@@ -132,7 +132,7 @@ input, label, button {
 }
 .card .price-tag .current-price {
   font-family: "Fraunces", serif;
-  font-size: 1.75rem;
+  font-size: 1.875rem;
   color: hsl(158, 36%, 37%);
   font-weight: 700;
 }
@@ -143,12 +143,13 @@ input, label, button {
 }
 @media (min-width: 64em) {
   .card .price-tag .current-price {
-    font-size: 1.75rem;
+    font-size: 1.875rem;
   }
 }
 .card .price-tag .previous-price {
   font-size: 0.875rem;
   text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
 }
 @media (min-width: 34.375em) {
   .card .price-tag .previous-price {
